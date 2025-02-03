@@ -3,22 +3,9 @@ const nextConfig = {
   eslint: {
     dirs: ['src'],
   },
-
   reactStrictMode: true,
   swcMinify: true,
-
-  // Uncoment to add domain whitelist
-  // images: {
-  //   remotePatterns: [
-  //     {
-  //       protocol: 'https',
-  //       hostname: 'res.cloudinary.com',
-  //     },
-  //   ]
-  // },
-
   webpack(config) {
-    // Grab the existing rule that handles SVG imports
     const fileLoaderRule = config.module.rules.find((rule) =>
       rule.test?.test?.('.svg')
     );
@@ -33,17 +20,12 @@ const nextConfig = {
       // Convert all other *.svg imports to React components
       {
         test: /\.svg$/i,
-        issuer: { not: /\.(css|scss|sass)$/ },
+        issuer: /\.[jt]sx?$/,
         resourceQuery: { not: /url/ }, // exclude if *.svg?url
-        loader: '@svgr/webpack',
-        options: {
-          dimensions: false,
-          titleProp: true,
-        },
+        use: ['@svgr/webpack'],
       }
     );
 
-    // Modify the file loader rule to ignore *.svg, since we have it handled now.
     fileLoaderRule.exclude = /\.svg$/i;
 
     return config;
