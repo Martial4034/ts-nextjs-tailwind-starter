@@ -6,26 +6,27 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   webpack(config) {
+    // Trouver la règle existante pour les fichiers SVG
     const fileLoaderRule = config.module.rules.find((rule) =>
       rule.test?.test?.('.svg')
     );
 
+    // Ajout de nouvelles règles pour SVG
     config.module.rules.push(
-      // Reapply the existing rule, but only for svg imports ending in ?url
       {
         ...fileLoaderRule,
         test: /\.svg$/i,
-        resourceQuery: /url/, // *.svg?url
+        resourceQuery: /url/, // Traiter les SVG avec ?url comme fichiers
       },
-      // Convert all other *.svg imports to React components
       {
         test: /\.svg$/i,
         issuer: /\.[jt]sx?$/,
-        resourceQuery: { not: /url/ }, // exclude if *.svg?url
+        resourceQuery: { not: /url/ }, // Exclure les SVG avec ?url
         use: ['@svgr/webpack'],
       }
     );
 
+    // Exclure les SVG de la règle par défaut
     fileLoaderRule.exclude = /\.svg$/i;
 
     return config;

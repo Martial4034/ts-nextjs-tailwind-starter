@@ -1,51 +1,35 @@
-// OxeltaCard.tsx
 'use client';
 
-import Image from 'next/image';
 import React from 'react';
+import { BorderFlappySVG, LogoSVG, LogoOxeltaSVG } from '@/components/svg';
 
 const OxeltaCard = () => {
   return (
-    <div className='relative flex flex-col items-center justify-center p-6 max-w-2xl mx-auto'>
+    <div className="relative flex flex-col items-center justify-center p-6 max-w-2xl mx-auto min-h-screen md:min-h-0 md:pt-16">
       {/* Image de fond de la card */}
-      <div className='relative w-full max-w-xl'>
-        <Image
-          src='/images/BorderFlappy.png'
-          alt='Border Flappy'
-          width={800}
-          height={400}
-          className='object-contain'
-        />
+      <div className="relative w-full max-w-xl">
+        {/* Remplacement de l'image par le composant BorderFlappySVG */}
+        <BorderFlappySVG className="w-[22rem] md:w-[35rem] h-auto object-contain" />
 
         {/* Contenu de la card */}
-        <div className='absolute inset-0 flex flex-col items-center justify-center text-white'>
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
           {/* Logo FlappyOxo */}
-          <div className='mb-4'>
-            <Image
-              src='/images/logo.png'
-              alt='Flappy Oxo Logo'
-              width={300}
-              height={100}
-              className='object-contain'
-            />
+          <div className="mb-4">
+            {/* Remplacement de l'image par le composant LogoSVG */}
+            <LogoSVG className="w-44 md:w-[17rem] h-auto object-contain md:pt-0" />
           </div>
 
           {/* Texte */}
-          <div className='w-[100%] text-center mx-auto'>
-            <p className='font-qualy font-bold text-3xl mb-4 uppercase'>
+          <div className="w-full text-center mx-auto">
+            <p className="font-qualy font-bold text-2xl md:text-3xl mb-4 uppercase">
               Create and Develop by
             </p>
           </div>
 
           {/* Logo Oxelta */}
           <div>
-            <Image
-              src='/images/oxelta.png'
-              alt='Oxelta Logo'
-              width={120}
-              height={80}
-              className='object-contain'
-            />
+            {/* Remplacement de l'image par le composant LogoOxeltaSVG */}
+            <LogoOxeltaSVG className="w-[6rem] md:w-[10em] h-auto object-contain md:pb-1" />
           </div>
         </div>
       </div>

@@ -76,6 +76,10 @@
   }
   /* #endregion  /**======== Typography =========== */
 
+  body {
+    overscroll-behavior-x: none; /* Désactive tout glissement horizontal sur mobile */
+  }
+  
   .layout {
     /* 1100px */
     max-width: 68.75rem;

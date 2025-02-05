@@ -6,113 +6,102 @@ import ClaimOXCard from '@/components/ClaimOXCard';
 import EarnLaterBanner from '@/components/EarnLaterBanner';
 import EarnNowBanner from '@/components/EarnNowBanner';
 import FlappyOxoBanner from '@/components/FlappyOxoBanner';
-import OX_2 from '@/components/OX_2';
 import OxeltaCard from '@/components/OxeltaCard';
 import OxyCard from '@/components/OxyCard';
-import PilesOx from '@/components/PilesOx';
-import TropheeOX from '@/components/TropheeOX';
-import TropheeTON from '@/components/TropheeTON';
+import { TropheeTONSVG, TropheeOXSVG, PilesOXSVG, OXCoinSVG } from '../components/svg';
 
 export default function HomePage() {
   return (
     <main>
       <Head>
         <title>FlappyOxo</title>
-        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      <div className='custom-scrollbar no-scrollbar smooth-scroll snap-y snap-mandatory h-screen w-full overflow-y-scroll'>
+      <div className="custom-scrollbar no-scrollbar smooth-scroll snap-y snap-mandatory h-screen w-full overflow-y-scroll">
         {/* Section 1 */}
         <section
-          className='snap-start min-h-screen bg-cover bg-center relative'
+          className="snap-start min-h-screen bg-cover bg-center relative overflow-hidden"
           style={{ backgroundImage: 'url(/images/bg1.png)' }}
         >
-          {/* Oxy Card en haut à gauche */}
-          <div className='absolute top-4 left-4'>
+          <div className="absolute top-4 left-4 z-10">
             <OxyCard />
           </div>
-
-          {/* FlappyOxo Banner centré */}
-          <div className='flex justify-center'>
+          <div className="flex justify-center">
             <FlappyOxoBanner />
           </div>
-
-          {/* Icone OX en bas à droite */}
-          <div className='absolute bottom-4 right-4'>
-            <OX_2 />
+          <div className="absolute bottom-4 right-4">
+            <OXCoinSVG />
           </div>
         </section>
 
-        {/* Section 2 - Ajustement des positions */}
+        {/* Section 2 */}
         <section
-          className='snap-start min-h-screen bg-cover bg-center relative flex items-center'
+          className="snap-start min-h-screen bg-cover bg-center relative overflow-hidden"
           style={{ backgroundImage: 'url(/images/bg2.png)' }}
         >
-          <div className='absolute inset-0 bg-gradient-to-r from-[#3D7087] to-[#6BC5ED] opacity-90'></div>
-
-          {/* Conteneur avec grille pour bien positionner les éléments */}
-          <div className='relative grid grid-cols-2 w-full px-20'>
-            {/* EarnNowBanner juste à gauche du centre */}
-            <div className='flex justify-end pr-10'>
+          <div className="absolute top-4 left-4 sm:hidden z-10">
+            <OxyCard />
+          </div>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#3D7087] to-[#6BC5ED] opacity-90 z-0"></div>
+          <div className="relative h-full w-full flex flex-col sm:grid sm:grid-cols-2">
+            <div className="flex justify-center items-center flex-1">
               <EarnNowBanner />
             </div>
-
-            {/* TropheeTON centré dans la moitié droite */}
-            <div className='flex justify-start pl-40'>
-              <TropheeTON />
+            <div className="hidden sm:flex justify-center items-center flex-1">
+              <TropheeTONSVG className="w-[5rem] md:w-[50%] lg:w-[24rem] object-contain" />
             </div>
           </div>
         </section>
 
         {/* Section 3 */}
         <section
-          className='snap-start min-h-screen bg-cover bg-center'
+          className="snap-start min-h-screen bg-cover bg-center relative overflow-hidden"
           style={{
             backgroundImage: 'url(/images/bg1.png)',
-            position: 'relative',
           }}
         >
-          {/* Ajout du fond dégradé avec opacité */}
-          <div className='absolute inset-0 bg-gradient-to-r from-[#A82DAE] to-[#110411] opacity-90'></div>
-
-          {/* Conteneur avec grille pour bien positionner les éléments */}
-          <div className='relative grid grid-cols-2 w-full px-20'>
-            {/* EarnLaterBanner juste à gauche du centre */}
-            <div className='flex justify-end pr-40'>
-              <TropheeOX />
-            </div>
-
-            {/* TropheeOX centré dans la moitié droite */}
-            <div className='flex justify-start pl-10'>
+          <div className="absolute top-4 left-4 sm:hidden z-10">
+            <OxyCard />
+          </div>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#A82DAE] to-[#110411] opacity-90 z-0"></div>
+          <div className="relative grid grid-rows-1 sm:grid-cols-2 h-full w-full">
+            <div className="flex justify-center items-center order-1 sm:order-2 lg:pr-16">
               <EarnLaterBanner />
+            </div>
+            <div className="hidden sm:flex justify-center items-center order-2 sm:order-1">
+              <TropheeOXSVG className="w-[85%] sm:w-[70%] md:w-[50%] lg:w-[24rem] object-contain" />
             </div>
           </div>
         </section>
 
-        {/* Section 4 - Claim OX agrandi et centré */}
+        {/* Section 4 */}
         <section
-          className='snap-start min-h-screen flex items-center justify-center relative px-4'
+          className="snap-start min-h-screen flex items-center justify-center relative px-4 overflow-hidden"
           style={{
             backgroundImage: 'url(/images/bg1.png)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
         >
-          <div className='absolute inset-0 bg-gradient-to-r from-[#AC3FA1] to-[#4564B4] opacity-90'></div>
-
-          <div className='relative flex justify-center w-full max-w-[80%]'>
+          <div className="absolute top-4 left-4 sm:hidden z-10">
+            <OxyCard />
+          </div>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#AC3FA1] to-[#4564B4] opacity-90 z-0"></div>
+          <div className="relative flex justify-center w-full max-w-[80%]">
             <ClaimOXCard />
           </div>
         </section>
 
         {/* Section 5 */}
-        <section className='snap-start min-h-screen bg-black relative'>
-          {/* Card au centre */}
-          <div className='flex h-full items-center justify-center text-white'>
-            <OxeltaCard />
+        <section className="snap-start min-h-screen bg-black relative overflow-hidden">
+          <div className="absolute top-4 left-4 sm:hidden z-10">
+            <OxyCard />
           </div>
-
-          {/* Piles d'OX en bas */}
-          <PilesOx />
+          <div className="flex h-full items-center justify-center text-white">
+          </div>
+          <div className="absolute bottom-0 w-full">
+            <PilesOXSVG className="w-full object-cover" />
+          </div>
         </section>
       </div>
     </main>

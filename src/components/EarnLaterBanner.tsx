@@ -1,22 +1,31 @@
 import React from 'react';
-
-import BorderTiny from '@/components/BorderTiny';
-import ButtonLater from '@/components/ButtonLater';
+import { BorderTinySVG, ButtonPinkSVG } from '../components/svg';
 import EarnLater from '@/components/EarnLater';
 import SloganLater from '@/components/SloganLater';
 
 const EarnLaterBanner = () => {
   return (
-    <div className='flex justify-center items-center h-screen'>
-      <BorderTiny>
-        <EarnLater />
-        <div className='mt-4 w-3/4 text-center'>
-          <SloganLater />
+    <div className="flex justify-center items-center h-screen">
+      <div className="relative flex flex-col items-center justify-center">
+        <BorderTinySVG className="w-[115%] sm:w-[80%] md:w-[60%] lg:w-[35rem] object-contain" />
+
+        <div className="absolute inset-0 flex flex-col items-center justify-center">
+          <EarnLater />
+
+          <div className="w-[90%] sm:w-[80%] md:w-[60%] lg:max-w-[23rem] text-center pt-4 sm:pt-6">
+            <SloganLater />
+          </div>
+
+          <div className="mt-4 sm:mt-6">
+            <a
+              href="#"
+              className="relative inline-flex items-center justify-center px-5 sm:px-8 pt-1 pb-2 sm:py-4 text-lg sm:text-xl md:text-2xl font-qualy font-bold text-white transition-transform transform hover:scale-105"
+            >
+              <ButtonPinkSVG className="w-[65%] sm:w-[75%] md:w-[50%] lg:w-[15rem]" />
+            </a>
+          </div>
         </div>
-        <div className='mt-6'>
-          <ButtonLater />
-        </div>
-      </BorderTiny>
+      </div>
     </div>
   );
 };
