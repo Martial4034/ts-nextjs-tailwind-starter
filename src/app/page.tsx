@@ -98,6 +98,7 @@ export default function HomePage() {
             <OxyCard />
           </div>
           <div className="flex h-full items-center justify-center text-white">
+            <OxeltaCard />
           </div>
           <div className="absolute bottom-0 w-full">
             <PilesOXSVG className="w-full object-cover" />

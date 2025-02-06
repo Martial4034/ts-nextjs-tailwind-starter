@@ -1,4 +1,6 @@
+import Image from 'next/image';
 import React from 'react';
+
 import { BirdSVG } from '../components/svg';
 
 const OxyCard = () => {
@@ -22,7 +24,13 @@ const OxyCard = () => {
 
       {/* Logo X */}
       <div className="flex items-center pl-2">
-        <img src="/images/Xlogo.png" alt="X Logo" width={20} height={20} />
+        <Image
+          src="/images/Xlogo.png"
+          alt="X Logo"
+          width={20}
+          height={20}
+          priority // Optionnel, à utiliser si cette image est critique
+        />
       </div>
     </div>
   );

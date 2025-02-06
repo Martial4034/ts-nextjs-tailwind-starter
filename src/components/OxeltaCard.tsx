@@ -1,7 +1,8 @@
 'use client';
 
 import React from 'react';
-import { BorderFlappySVG, LogoSVG, LogoOxeltaSVG } from '@/components/svg';
+
+import { BorderFlappySVG, LogoOxeltaSVG,LogoSVG } from '@/components/svg';
 
 const OxeltaCard = () => {
   return (

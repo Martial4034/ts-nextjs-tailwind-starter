@@ -1,7 +1,9 @@
 import React from 'react';
-import { BorderTinySVG, ButtonBlueSVG } from '../components/svg';
+
 import EarnNow from '@/components/EarnNow';
 import SloganEarn from '@/components/SloganEarn';
+
+import { BorderTinySVG, ButtonBlueSVG } from '../components/svg';
 
 const EarnNowBanner = () => {
   return (

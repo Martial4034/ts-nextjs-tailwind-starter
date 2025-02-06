@@ -1,7 +1,9 @@
 import React from 'react';
-import { BorderTinySVG, ButtonPinkSVG } from '../components/svg';
+
 import EarnLater from '@/components/EarnLater';
 import SloganLater from '@/components/SloganLater';
+
+import { BorderTinySVG, ButtonPinkSVG } from '../components/svg';
 
 const EarnLaterBanner = () => {
   return (

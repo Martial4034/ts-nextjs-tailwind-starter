@@ -1,7 +1,8 @@
 'use client';
 
 import React from 'react';
-import { BorderFlappySVG, LogoSVG, ButtonTelegramSVG } from '../components/svg';
+
+import { BorderFlappySVG, ButtonTelegramSVG,LogoSVG } from '../components/svg';
 
 const FlappyOxoBanner = () => {
   return (

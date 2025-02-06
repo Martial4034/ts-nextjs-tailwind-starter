@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { BorderClaimSVG, BorderTinySVG, ButtonTelegramSVG, OXCoinSVG } from '@/components/svg';
 
 const ClaimOXCard = () => {
