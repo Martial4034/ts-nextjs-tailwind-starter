@@ -16,5 +16,5 @@ export { default as TropheeOXSVG } from './TropheeOX.svg';
 //section 4
 export { default as BorderClaimSVG } from './BorderClaim.svg';
 export { default as LogoOxeltaSVG } from './LogoOxelta.svg';
-export { default as OXCoinSVG } from './OXCoin.svg';
+export { default as OXCoinSVG } from './OxCoin.svg';
 export { default as PilesOXSVG } from './PilesOX.svg';
