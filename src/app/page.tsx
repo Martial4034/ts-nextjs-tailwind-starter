@@ -20,10 +20,15 @@ export default function HomePage() {
       <div className="custom-scrollbar no-scrollbar smooth-scroll snap-y snap-mandatory h-screen w-full overflow-y-scroll">
         {/* Section 1 */}
         <section
-          className="snap-start min-h-screen bg-cover bg-center relative overflow-hidden"
-          style={{ backgroundImage: 'url(/images/bg1.png)' }}
+          className="snap-start bg-cover bg-center relative overflow-hidden"
+          style={{
+            backgroundImage: 'url(/images/bg1.png)',
+            height: 'calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom))',
+            paddingTop: 'env(safe-area-inset-top)',
+            paddingBottom: 'env(safe-area-inset-bottom)',
+          }}
         >
-          <div className="absolute top-4 left-4 z-10">
+          <div className="absolute top-4 left-4 z-10 hidden sm:block">
             <OxyCard />
           </div>
           <div className="flex justify-center">
@@ -36,10 +41,15 @@ export default function HomePage() {
 
         {/* Section 2 */}
         <section
-          className="snap-start min-h-screen bg-cover bg-center relative overflow-hidden"
-          style={{ backgroundImage: 'url(/images/bg2.png)' }}
+          className="snap-start bg-cover bg-center relative overflow-hidden"
+          style={{
+            backgroundImage: 'url(/images/bg2.png)',
+            height: 'calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom))',
+            paddingTop: 'env(safe-area-inset-top)',
+            paddingBottom: 'env(safe-area-inset-bottom)',
+          }}
         >
-          <div className="absolute top-4 left-4 sm:hidden z-10">
+          <div className="fixed top-4 left-4 sm:hidden z-10">
             <OxyCard />
           </div>
           <div className="absolute inset-0 bg-gradient-to-r from-[#3D7087] to-[#6BC5ED] opacity-90 z-0"></div>
@@ -55,14 +65,14 @@ export default function HomePage() {
 
         {/* Section 3 */}
         <section
-          className="snap-start min-h-screen bg-cover bg-center relative overflow-hidden"
+          className="snap-start bg-cover bg-center relative overflow-hidden"
           style={{
             backgroundImage: 'url(/images/bg1.png)',
+            height: 'calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom))',
+            paddingTop: 'env(safe-area-inset-top)',
+            paddingBottom: 'env(safe-area-inset-bottom)',
           }}
         >
-          <div className="absolute top-4 left-4 sm:hidden z-10">
-            <OxyCard />
-          </div>
           <div className="absolute inset-0 bg-gradient-to-r from-[#A82DAE] to-[#110411] opacity-90 z-0"></div>
           <div className="relative grid grid-rows-1 sm:grid-cols-2 h-full w-full">
             <div className="flex justify-center items-center order-1 sm:order-2 lg:pr-16">
@@ -76,16 +86,16 @@ export default function HomePage() {
 
         {/* Section 4 */}
         <section
-          className="snap-start min-h-screen flex items-center justify-center relative px-4 overflow-hidden"
+          className="snap-start flex items-center justify-center relative px-4 overflow-hidden"
           style={{
             backgroundImage: 'url(/images/bg1.png)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
+            height: 'calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom))',
+            paddingTop: 'env(safe-area-inset-top)',
+            paddingBottom: 'env(safe-area-inset-bottom)',
           }}
         >
-          <div className="absolute top-4 left-4 sm:hidden z-10">
-            <OxyCard />
-          </div>
           <div className="absolute inset-0 bg-gradient-to-r from-[#AC3FA1] to-[#4564B4] opacity-90 z-0"></div>
           <div className="relative flex justify-center w-full max-w-[80%]">
             <ClaimOXCard />
@@ -93,10 +103,14 @@ export default function HomePage() {
         </section>
 
         {/* Section 5 */}
-        <section className="snap-start min-h-screen bg-black relative overflow-hidden">
-          <div className="absolute top-4 left-4 sm:hidden z-10">
-            <OxyCard />
-          </div>
+        <section
+          className="snap-start bg-black relative overflow-hidden"
+          style={{
+            height: 'calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom))',
+            paddingTop: 'env(safe-area-inset-top)',
+            paddingBottom: 'env(safe-area-inset-bottom)',
+          }}
+        >
           <div className="flex h-full items-center justify-center text-white">
             <OxeltaCard />
           </div>
