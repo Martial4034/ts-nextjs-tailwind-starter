@@ -16,7 +16,16 @@ const OxyCard = () => {
     >
       {/* Oiseau */}
       <div className="flex items-center">
-        <BirdSVG className="" width={40} height={40} /> {/* Ajustez les tailles si nécessaire */}
+        <Image
+          src="/images/bird1.png"
+          alt="bird"
+          width={40}
+          height={40}
+          priority // Optionnel, à utiliser si cette image est critique
+        />
+      </div>
+      <div className="flex items-center">
+        
         <p className="text-white font-bold text-sm ml-2">
           I'm the boss OXY, the new bird of
         </p>
