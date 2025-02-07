@@ -18,7 +18,7 @@ const ClaimOXCard = () => {
           <h2 className='font-qualy text-3xl sm:text-3xl md:text-5xl font-bold mb-2 uppercase md:pt-8'>
             Claim 200 OX
           </h2>
-          <p className='text-sm sm:text-base md:text-xl mb-4 leading-tight md:pt-6 pt-3'>
+          <p className='text-sm sm:text-base md:text-xl mb-4 leading-tight md:pt-6 pt-5'>
             Join our community by clicking the link below! Receive OX and, most
             importantly, have fun!
           </p>
@@ -26,7 +26,7 @@ const ClaimOXCard = () => {
             href="#"
             className="transition-transform hover:scale-105 overflow-hidden inline-block"
           >
-            <ButtonTelegramSVG className='w-[80%] md:w-[75%] lg:w-[100%] object-contain md:pt-2 mx-auto md:mx-0 sm:pb-3' />
+            <ButtonTelegramSVG className='w-[90%] md:w-[75%] lg:w-[100%] object-contain pt-6 md:pt-2 mx-auto md:mx-0 sm:pb-3' />
           </a>
         </div>
 
