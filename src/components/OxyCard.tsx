@@ -32,7 +32,7 @@ const OxyCard = () => {
       </div>
 
       {/* Logo X */}
-      <div className="flex items-center pl-2">
+      <a href="https://x.com/Flappy_Oxo" className="flex items-center pl-2 transition-transform transform hover:scale-110">
         <Image
           src="/images/Xlogo.png"
           alt="X Logo"
@@ -40,7 +40,7 @@ const OxyCard = () => {
           height={20}
           priority // Optionnel, à utiliser si cette image est critique
         />
-      </div>
+      </a>
     </div>
   );
 };

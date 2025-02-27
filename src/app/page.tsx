@@ -22,7 +22,7 @@ export default function HomePage() {
         <section
           className="snap-start bg-cover bg-center relative"
           style={{
-            backgroundImage: 'url(/images/bg1.png)',
+            backgroundImage: 'url(/images/bg01.png)',
             height: 'calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom))',
             paddingTop: 'env(safe-area-inset-top)',
             paddingBottom: 'env(safe-area-inset-bottom)',
@@ -45,7 +45,7 @@ export default function HomePage() {
         <section
           className="snap-start bg-cover bg-center relative overflow-hidden"
           style={{
-            backgroundImage: 'url(/images/bg2.png)',
+            backgroundImage: 'url(/images/bg01.png)',
             height: 'calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom))',
             paddingTop: 'env(safe-area-inset-top)',
             paddingBottom: 'env(safe-area-inset-bottom)',
@@ -70,7 +70,7 @@ export default function HomePage() {
         <section
           className="snap-start bg-cover bg-center relative overflow-hidden"
           style={{
-            backgroundImage: 'url(/images/bg1.png)',
+            backgroundImage: 'url(/images/bg01.png)',
             height: 'calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom))',
             paddingTop: 'env(safe-area-inset-top)',
             paddingBottom: 'env(safe-area-inset-bottom)',
@@ -91,7 +91,7 @@ export default function HomePage() {
     <section
       className="snap-start flex items-center justify-center relative px-4 overflow-hidden"
       style={{
-        backgroundImage: 'url(/images/bg1.png)',
+        backgroundImage: 'url(/images/bg01.png)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         height: 'calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom))',
@@ -127,7 +127,9 @@ export default function HomePage() {
           {/* Carte Oxelta centrée (légèrement plus haut sur PC) */}
           <div className="flex h-full items-center justify-center text-white relative">
             <div className="absolute top-[45%] sm:top-[40%] transform -translate-y-1/2">
-              <OxeltaCard />
+              <a href="https://oxelta.io/" className="relative inline-block transition-transform transform hover:scale-105">
+                <OxeltaCard />
+              </a>
             </div>
           </div>
 

@@ -25,14 +25,12 @@ const FlappyOxoBanner = () => {
         </div>
 
         {/* Logo Oxelta */}
-        <div className="relative inline-flex px-20 py-2 items-center justify-center text-white font-qualy font-bold transition-transform transform hover:scale-105 overflow-hidden">
-          <a
-            href="#"
-            className="flex items-center justify-center w-full h-full"
-          >
-            <ButtonTelegramSVG className="w-[75%] md:w-[90%] lg:w-96 object-contain" />
-          </a>
-        </div>
+        <a
+          href="https://t.me/flappyoxoEn"
+          className="relative inline-flex px-20 py-2 items-center justify-center text-white font-qualy font-bold transition-transform transform hover:scale-105 overflow-hidden"
+        >
+          <ButtonTelegramSVG className="w-[75%] md:w-[90%] lg:w-96 object-contain" />
+        </a>
       </div>
     </div>
   );

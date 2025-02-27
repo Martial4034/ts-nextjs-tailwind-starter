@@ -20,8 +20,8 @@ const EarnLaterBanner = () => {
 
           <div className="mt-4 sm:mt-6">
             <a
-              href="#"
-              className="relative inline-flex items-center justify-center px-5 sm:px-8 pt-1 pb-2 sm:py-4 text-lg sm:text-xl md:text-2xl font-qualy font-bold text-white transition-transform transform hover:scale-105"
+              href="https://t.me/flappyoxoEn"
+              className="relative inline-flex items-center justify-center px-5 sm:px-8 pt-1 pb-2 sm:py-4 text-lg sm:text-xl md:text-2xl font-qualy font-bold text-white transition-transform transform hover:scale-110 hover:opacity-80"
             >
               <ButtonPinkSVG className="w-[65%] sm:w-[75%] md:w-[50%] lg:w-[15rem]" />
             </a>

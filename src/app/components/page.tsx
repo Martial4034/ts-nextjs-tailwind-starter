@@ -86,9 +86,6 @@ export default function ComponentPage() {
                     </option>
                   ))}
                 </select>
-                <ButtonLink href='https://github.com/theodorusclarence/ts-nextjs-tailwind-starter/blob/main/src/styles/colors.css'>
-                  Check list of colors
-                </ButtonLink>
               </div>
               <div className='flex flex-wrap gap-2 text-xs font-medium'>
                 <div className='bg-primary-50 flex h-10 w-10 items-center justify-center rounded text-black'>
@@ -134,9 +131,6 @@ export default function ComponentPage() {
               </p>
               <div className='space-x-2'>
                 <UnstyledLink href='/'>Internal Links</UnstyledLink>
-                <UnstyledLink href='https://theodorusclarence.com'>
-                  Outside Links
-                </UnstyledLink>
               </div>
             </li>
             <li className='space-y-2'>
@@ -145,12 +139,7 @@ export default function ComponentPage() {
                 Add styling on top of UnstyledLink, giving a primary color to
                 the link.
               </p>
-              <div className='space-x-2'>
-                <PrimaryLink href='/'>Internal Links</PrimaryLink>
-                <PrimaryLink href='https://theodorusclarence.com'>
-                  Outside Links
-                </PrimaryLink>
-              </div>
+              
             </li>
             <li className='space-y-2'>
               <h2 className='text-lg md:text-xl'>UnderlineLink</h2>
@@ -158,12 +147,7 @@ export default function ComponentPage() {
                 Add styling on top of UnstyledLink, giving a dotted and animated
                 underline.
               </p>
-              <div className='space-x-2'>
-                <UnderlineLink href='/'>Internal Links</UnderlineLink>
-                <UnderlineLink href='https://theodorusclarence.com'>
-                  Outside Links
-                </UnderlineLink>
-              </div>
+              
             </li>
             <li className='space-y-2'>
               <h2 className='text-lg md:text-xl'>ArrowLink</h2>
@@ -197,38 +181,7 @@ export default function ComponentPage() {
               <h2 className='text-lg md:text-xl'>ButtonLink</h2>
               <p className={clsx('!mt-1 text-sm', textColor)}>
                 Button styled link with 3 variants.
-              </p>
-              <div className='flex flex-wrap gap-2'>
-                <ButtonLink
-                  variant='primary'
-                  href='https://theodorusclarence.com'
-                >
-                  Primary Variant
-                </ButtonLink>
-                <ButtonLink
-                  variant='outline'
-                  isDarkBg={mode === 'dark'}
-                  href='https://theodorusclarence.com'
-                >
-                  Outline Variant
-                </ButtonLink>
-                <ButtonLink
-                  variant='ghost'
-                  isDarkBg={mode === 'dark'}
-                  href='https://theodorusclarence.com'
-                >
-                  Ghost Variant
-                </ButtonLink>
-                <ButtonLink variant='dark' href='https://theodorusclarence.com'>
-                  Dark Variant
-                </ButtonLink>
-                <ButtonLink
-                  variant='light'
-                  href='https://theodorusclarence.com'
-                >
-                  Light Variant
-                </ButtonLink>
-              </div>
+              </p>              
             </li>
             <li className='space-y-2'>
               <h2 className='text-lg md:text-xl'>Button</h2>

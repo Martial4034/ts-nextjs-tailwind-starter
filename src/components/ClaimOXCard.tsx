@@ -23,8 +23,8 @@ const ClaimOXCard = () => {
             importantly, have fun!
           </p>
           <a
-            href="#"
-            className="transition-transform hover:scale-105 overflow-hidden inline-block"
+            href="https://t.me/flappyoxoEn"
+            className="transition-transform hover:scale-110 hover:opacity-80 overflow-hidden inline-block"
           >
             <ButtonTelegramSVG className='w-[90%] md:w-[75%] lg:w-[100%] object-contain pt-6 md:pt-2 mx-auto md:mx-0 sm:pb-3' />
           </a>
