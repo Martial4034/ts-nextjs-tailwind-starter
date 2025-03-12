@@ -5,7 +5,7 @@ const SloganEarn = () => {
     <h2 className='font-light text-white text-base md:text-xl max-w-[50rem] text-center'>
       Play on the Telegram Mini App and<br></br> earn{' '}
       <span className='font-bold'>$TON</span>. Win up to{' '}
-      <span className='font-bold'>$5,000</span> in<br></br> just a single game!
+      <span className='font-bold'>1,000 TON</span> in<br></br> just a single game!
     </h2>
   );
 };
